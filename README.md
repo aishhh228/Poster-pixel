@@ -1,4 +1,4 @@
-# sleep_application
+# PosterPixel
 
 A new Flutter application.
 
