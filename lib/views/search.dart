@@ -46,6 +46,7 @@ class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[850],
       appBar: AppBar(
         title: brandName(),
         elevation: 0.0,
@@ -56,7 +57,7 @@ class _SearchState extends State<Search> {
           children: <Widget>[
             Container(
               decoration: BoxDecoration(
-              color: Color(0xfff5f8fd),
+                color: Colors.white,
                borderRadius: BorderRadius.circular(30)
               ),
               padding: EdgeInsets.symmetric(horizontal: 24),
@@ -67,6 +68,7 @@ class _SearchState extends State<Search> {
                 controller: searchController,
                 decoration: InputDecoration(
                 hintText: "search",
+
                 border: InputBorder.none,
                   ),
                ),
@@ -76,7 +78,7 @@ class _SearchState extends State<Search> {
                       getSearchWallpaper(searchController.text);
                    },
                      child: Container(
-                        child: Icon(Icons.search))),
+                        child: Icon(Icons.search, color: Colors.white,))),
               ],),
           ),
               SizedBox(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sleep_application/views/home.dart';
 
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Wallpaper",
       theme: ThemeData(
-          primaryColor: Colors.white,
+          primaryColor: Colors.grey[850],
       ),
       home: Home(),
     );

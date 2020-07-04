@@ -5,7 +5,6 @@ import 'package:sleep_application/data/data.dart';
 import 'package:sleep_application/model/categories_model.dart';
 import 'package:sleep_application/model/wallpaper_model.dart';
 import 'package:sleep_application/views/categorie.dart';
-import 'package:sleep_application/views/image_view.dart';
 import 'package:sleep_application/views/search.dart';
 import 'package:sleep_application/widget/widget.dart';
 import 'package:http/http.dart' as http;
@@ -51,7 +50,7 @@ class _HomeState extends State<Home>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[850],
       appBar: AppBar(
         title: brandName(),
         elevation: 0.0,
@@ -61,8 +60,9 @@ class _HomeState extends State<Home>{
           child: Column(children: <Widget>[
             Container(
               decoration: BoxDecoration(
-                color: Color(0xfff5f8fd),
-                borderRadius: BorderRadius.circular(30)
+                color: Colors.white,
+
+                borderRadius: BorderRadius.circular(35)
              ),
               padding: EdgeInsets.symmetric(horizontal: 24),
               margin: EdgeInsets.symmetric(horizontal: 24),
@@ -92,7 +92,7 @@ class _HomeState extends State<Home>{
               Container(
                 height: 80,
                 child: ListView.builder(
-                  padding: EdgeInsets.symmetric(horizontal: 24),
+                  padding: EdgeInsets.symmetric(horizontal: 24), //this is category part where  i want to put trending
                     itemCount: categories.length,
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
@@ -135,16 +135,16 @@ class CategoriesTile extends StatelessWidget{
         child: Stack(
           children: <Widget>[
             ClipRRect(
-              borderRadius: BorderRadius.circular(9),
-              child: Image.network(imgUrl,height: 50, width: 100, fit: BoxFit.cover,),
+              borderRadius: BorderRadius.circular(13),
+              child: Image.network(imgUrl,height: 70, width: 100, fit: BoxFit.cover,),
             ),
             Container(
 
               decoration: BoxDecoration(
                 color: Colors.black26,
-                borderRadius: BorderRadius.circular(9),
+                borderRadius: BorderRadius.circular(13),
               ),
-              height: 50, width: 100,
+              height: 70, width: 100,
               alignment: Alignment.center,
               child: Text(title,style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500, fontSize: 15),),)
           ],

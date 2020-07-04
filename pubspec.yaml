@@ -13,6 +13,11 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.12.1
+  cached_network_image: ^2.2.0+1
+  image_gallery_saver: ^1.5.0
+  permission_handler: ^4.2.0+hotfix.3
+  random_string: ^2.1.0
+  dio: ^3.0.9
 
   cupertino_icons: ^0.1.3
 

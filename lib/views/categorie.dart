@@ -46,12 +46,14 @@ class _CategoriesState extends State<Categories> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[850],
         appBar: AppBar(
           title: brandName(),
           elevation: 0.0,
         ),
         body:SingleChildScrollView(
           child: Container(
+
             child:Column(
               children: <Widget>[
                 SizedBox(
