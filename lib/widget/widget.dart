@@ -5,7 +5,7 @@ Widget brandName(){
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: <Widget>[
-      Text("Poster",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500), ),
+      Text("Poster",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500), ),
       Text("Pixel",style: TextStyle(color: Colors.deepOrange),)
     ],
   );
@@ -35,7 +35,7 @@ Widget wallpaperList({List<WallpaperModel> wallpapers,context}){
               tag: wallpaper.src.portrait,
               child: Container(
                 child:ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
+                    borderRadius: BorderRadius.circular(5),
                     child: Image.network(wallpaper.src.portrait,fit: BoxFit.cover,)),
               ),
             ),
