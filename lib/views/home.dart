@@ -62,7 +62,7 @@ class _HomeState extends State<Home>{
               decoration: BoxDecoration(
                 color: Colors.white,
 
-                borderRadius: BorderRadius.circular(35)
+                borderRadius: BorderRadius.circular(10)
              ),
               padding: EdgeInsets.symmetric(horizontal: 24),
               margin: EdgeInsets.symmetric(horizontal: 24),
@@ -92,7 +92,7 @@ class _HomeState extends State<Home>{
               Container(
                 height: 80,
                 child: ListView.builder(
-                  padding: EdgeInsets.symmetric(horizontal: 24), //this is category part where  i want to put trending
+                  padding: EdgeInsets.symmetric(horizontal: 24),
                     itemCount: categories.length,
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
@@ -136,7 +136,7 @@ class CategoriesTile extends StatelessWidget{
           children: <Widget>[
             ClipRRect(
               borderRadius: BorderRadius.circular(13),
-              child: Image.network(imgUrl,height: 70, width: 100, fit: BoxFit.cover,),
+              child: Image.network(imgUrl,height: 50, width: 100, fit: BoxFit.cover,),
             ),
             Container(
 
@@ -144,7 +144,7 @@ class CategoriesTile extends StatelessWidget{
                 color: Colors.black26,
                 borderRadius: BorderRadius.circular(13),
               ),
-              height: 70, width: 100,
+              height: 50, width: 100,
               alignment: Alignment.center,
               child: Text(title,style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500, fontSize: 15),),)
           ],
