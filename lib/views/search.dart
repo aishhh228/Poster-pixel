@@ -22,7 +22,7 @@ class _SearchState extends State<Search> {
     var response = await http.get( "https://api.pexels.com/v1/search?query=$query&per_page=15",
         headers: {
           "Authorization" : apiKey});
-//    print(response.body.toString());
+
 
     Map<String,dynamic> jsonData = jsonDecode(response.body);
     jsonData["photos"].forEach((element) {
@@ -58,7 +58,7 @@ class _SearchState extends State<Search> {
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
-               borderRadius: BorderRadius.circular(30)
+               borderRadius: BorderRadius.circular(10)
               ),
               padding: EdgeInsets.symmetric(horizontal: 24),
               margin: EdgeInsets.symmetric(horizontal: 24),
